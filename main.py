@@ -14,6 +14,7 @@ class MyBot(commands.Bot):
         # Cog読み込み
         await self.load_extension("cogs.auth")
         await self.load_extension("cogs.ticket")
+        await self.load_extension("cogs.moderation")
 
         # スラッシュコマンド同期（グローバル）
         await self.tree.sync()
